@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 260px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 400px;
+  height: 260px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+ 
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  width:400px;
+  height: 260px;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  width: 400px;
+  height: 260px;
+}
+
+/*footer*/
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background:  #e6e6e6 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#3333ff;
+}
+#footer a {
+    color: #3333ff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#3333ff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-info bg-white fixed-top text-dark">
+        <div class="container">
+        <img src="images/logo.png" class="navbar-brand" height="60px" width="230px">
+            <ul class="navbar-nav text-dark">
+                <li class="nav-item">
+                    <a href="cards.html" class="nav-link">Business Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact us</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a href="" class="nav-link">Blog</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a href="" class="nav-link">service</a>
+                </li>
+        
+            </ul>
+        
+        </div>
+            </nav><!--end navbar-->
+            <div class="container-fluide mt-5">
+                <img src="images/b.jpg" alt="" height="600" width="100%">
+            </div>
+
+
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-lg-4">
+                        <img src="images/genie.png" alt="" class="h-50 w-50 ml-5">
+                        <p class="big">
+                            A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
+                             design, and offers our highest level of durability and precision printing.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/book.png" alt="" class="h-50 w-50 ml-5">
+                        <p class="big">
+                            A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
+                             design, and offers our highest level of durability and precision printing.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/television.png" alt="" class="h-50 w-50 center ml-5" >
+                        <p class="big">
+                            A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
+                             design, and offers our highest level of durability and precision printing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluide">
+                <h1 class="display-5 text-info text-center " style="font-family: 	Times New Roman;"> Business Cards</h1>
+                <div class="row ">
+<div class="col-md-4">
+    <div class="flip-box shadow">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+           <img src="newfolder/3.jpg" class="image"  height="260px" width="400px" alt="">
+          </div>
+          <div class="flip-box-back">
+            <img src="newfolder/4.jpg"  class="image"  height="260px" width="400px" alt="">
+          </div>
+        </div>
+      </div> 
+      <div class="text-center my-3">
+        <h5>Matt Finish</h5>
+          <a href=""><h6>Buy Now</h6></a></div>
+</div>
+<div class="col-md-4">
+    <div class="flip-box shadow">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+           <img src="newfolder/6.jpg"  class="image"  height="260px" width="400px"  alt="">
+          </div>
+          <div class="flip-box-back">
+            <img src="newfolder/7.jpg"  class="image"  height="260px" width="400px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="text-center my-3">
+        <h5>Matt Finish</h5>
+          <a href=""><h6>Buy Now</h6></a></div> 
+</div>
+<div class="col-md-4"> 
+    <div class="flip-box shadow">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+           <img src="newfolder/9.jpg"  class="image"  height="260px" width="400px"  alt="">
+          </div>
+          <div class="flip-box-back">
+            <img src="newfolder/electoplating.jpg"  class="image"   height="260px" width="400px" alt="">
+          </div>
+        </div>
+      </div> 
+      <div class="text-center my-3">
+        <h5>Matt Finish</h5>
+          <a href=""><h6>Buy Now</h6></a></div>
+</div>
+                </div><!--close frst flip row-->
+
+
+
+
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <div class="flip-box shadow">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                               <img src="newfolder/embosse.jpg" class="image"  height="260px" width="400px" alt="">
+                              </div>
+                              <div class="flip-box-back">
+                                <img src="newfolder/embossed.jpg"  class="image"  height="260px" width="400px" alt="">
+                              </div>
+                            
+                            </div>
+                     
+                          </div> 
+
+                          <div class="text-center my-3">
+                            <h5>Matt Finish</h5>
+                              <a href=""><h6>Buy Now</h6></a></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="flip-box shadow">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                               <img src="newfolder/letterpress.jpg"  class="image"  height="260px" width="400px"  alt="">
+                              </div>
+                              <div class="flip-box-back">
+                                <img src="newfolder/uncoated.jpg"  class="image"  height="260px" width="400px" alt="">
+                              </div>
+                            </div>
+                          </div> 
+                          <div class="text-center my-3">
+                            <h5>Matt Finish</h5>
+                              <a href=""><h6>Buy Now</h6></a></div>
+                    </div>
+                    <div class="col-md-4"> 
+                        <div class="flip-box shadow">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                               <img src="newfolder/unique.jpg"  class="image"  height="260px" width="400px"  alt="">
+                              </div>
+                              <div class="flip-box-back">
+                                <img src="newfolder/9.jpg"  class="image"   height="260px" width="400px" alt="">
+                              </div>
+                            </div>
+                          </div> 
+                          <div class="text-center my-3">
+                            <h5>Matt Finish</h5>
+                              <a href=""><h6>Buy Now</h6></a></div>
+                    </div>
+                                    </div><!--close sec flip row-->
+            </div>
+
+
+
+
+
+            <!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                    <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>	
+     	
+    </div>
+</section>
+<!-- ./Footer -->
+               
+  </body>
+  </html>

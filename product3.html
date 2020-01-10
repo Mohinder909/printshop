@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+   
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+    
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+/*tabs*/
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius:  25px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(48, 46, 46);
+  color:#ccc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(19, 18, 18);
+  color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius:  25px;
+  
+
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="container-fluide p-5 mt-5">
+        <H2 class="text-center my-5 text-info">Product Detail</H2>
+        <div class="row">
+            <div class="col-md-5">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="edit/1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="edit/2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="edit/brownkraft.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="edit/colour.jpg" style="width:100%">
+        </div>
+      
+    
+          
+  
+      
+        <div class="caption-container">
+            <div class="row">
+                <div class="column mr-1">
+                  <img class="demo cursor" src="edit/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column mr-1">
+                  <img class="demo cursor" src="edit/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column mr-1">
+                  <img class="demo cursor" src="edit/brownkraft.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column mr-1">
+                  <img class="demo cursor" src="edit/letter.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+               
+              </div>
+        </div><!--close images-->
+
+        
+
+
+<div class="tab my-4">
+  <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
+  <button class="tablinks" onclick="openCity(event, 'Additional')">Additional Info</button>
+  <button class="tablinks" onclick="openCity(event, 'HowtoOrder')">How to Order</button>
+  <button class="tablinks" onclick="openCity(event, 'FAQ')">FAQ's</button>
+  <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews</button>
+  <button class="tablinks" onclick="openCity(event, 'PaymentOptions')">Payment Options</button>
+</div>
+        <div id="Description" class="tabcontent">
+            <h3>Description</h3>
+            <p>DESCRIPTION</p>
+
+            <p> Wood | Classy | Intricate | Creative | Biodegradable
+                Fascinate with your business cards with a wooden and royal look to your brand and brand images.
+                 Craft elementary and modest designs on wood to showcase your brand.</p>
+                
+          </div><!-- close Description-->
+          
+          <div id="Additional" class="tabcontent">
+            <h3>Additional Info
+            </h3>
+            <p>ADDITIONAL INFORMATION
+                Weight	0.08 kg
+                Material	
+                Pine
+                
+                Treatment	
+                Laser Cut, Laser Engrave
+                
+                Delivery	
+                Business cards without treatments are usually shipped within 3-7 working days
+                Business cards with treatments are usually shipped within 10-14 working days
+                Working days are Monday – Saturday
+                
+                </p> 
+          </div><!--close Additional-->
+          
+          <div id="HowtoOrder" class="tabcontent">
+            <h3>How to Order
+            </h3>
+            <p>HOW TO ORDER
+                1. Select the card size, quantity and treatments. In order to get correct pricing, please make sure you have selected all the features you wish to apply on the card.
+                
+                2. If you are unsure about the treatments, please click on the “?” icon and it will bring you to the information page for that treatment.
+                
+                3. Make sure you read the paper information and delivery time.
+                
+                4. You can either upload your print file. Make sure you have setup the file in vector format if you do so. Or you can ask us to design your business card / logo. You can also design your business card using our easy to use design editor with hundreds of templates to choose from.
+                
+                5. Once the payment has completed, our designer will prepare a finalized print proof and send you a copy by email.
+                
+                6. After you have approved the proof, we will start the production and will then provide you with a tracking number when it’s ready for shipping.
+                
+                </p>
+          </div><!-- close how to order-->
+
+          <div id="FAQ" class="tabcontent">
+            <h3>FAQ's</h3>
+            <p>FAQ'S
+                What are Wood Business Cards?
+                
+                Wood Business Cards are the rustic looking with a grainy texture. Such cards are not alike, rather they are different in thickness and appeal.
+                
+                Can I get a QR Code on my Business Cards?
+                
+                You certainly can. You can add them in the easy to use “online design editor” process.
+                
+                Do you sell Business Card holders?
+                
+                Yes! You can buy them in our Good Stuff section.
+                
+                Do you sell square Cards as well?
+                
+                Oh yes. We’re very proud of our SquareCards and you can select in Size.
+                
+                </p>
+          </div><!-- close faq-->
+
+          <div id="Reviews" class="tabcontent">
+            <h3>
+                Reviews
+            </h3>
+            <p>REVIEWS
+                There are no reviews yet.
+                
+                Only logged in customers who have purchased this product may leave a review.
+                
+                </p>
+          </div><!--review-->
+
+          <div id="PaymentOptions" class="tabcontent">
+            <h3>Payment Options</h3>
+            <p>AVAILABLE PAYMENT OPTIONS
+                All Major Debit Cards, Credit Cards, Netbanking, Paytm, EMI.
+                For International Payments- we accept Paypal and Western Union
+                
+                </p>
+          </div><!--close payments-->
+      
+      </div><!--end col-md-7-->
+     
+      <div class="col-md-4">
+         <div class="card p-4 shadow-sm" style="border-radius: 25px;">
+          <h2 class="text-center text-secondary">About Product</h2>
+
+          <div class="form-group">
+            <label for="Paper"  class="text-secondary">Select Paper</label>
+            <select class="form-control" id="sel1">
+              <option>Matt Finish</option>
+              <option>Letter Press</option>
+              <option>Soft Suede</option>
+              <option>Foiling</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Quantity  " class="text-secondary">Select Quantity</label>
+            <select class="form-control" id="sel1">
+              <option>50</option>
+              <option>100</option>
+              <option>250</option>
+              <option>500</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Size  " class="text-secondary">Select Size</label>
+            <select class="form-control" id="sel1">
+              <option>Standard 88mm x 55mm</option>
+              <option>Standard 65mm x 65mm</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Printing  " class="text-secondary">Select Printing</label>
+            <select class="form-control" id="sel1">
+              <option>Single Side</option>
+              <option>Both Side</option>
+            </select>
+          </div>
+
+          <h6>Choose treatments (optional)</h6>
+
+          <div class="form-group">
+            <label for="Printing  " class="text-secondary">Raised Spotglosse</label>
+            <select class="form-control" id="sel1">
+                <option>None</option>
+              <option>Single Side</option>
+              <option>Both Side</option>
+              </select>
+          </div>
+
+          <h6>Choose addons (optional)</h6>
+
+          <div class="form-group">
+            <label for="Accessories  " class="text-secondary">Accessories</label>
+            <select class="form-control" id="sel1">
+                <option>Business Card Holder</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="Design  " class="text-secondary">Design</label>
+            <select class="form-control" id="sel1">
+                <option>Upload or email your own design</option>
+                <option>Please design my business card (₹999.00)</option>
+                <option>Please design my logo & business card (₹5,999.00)</option>
+                <option>I will design using template</option>
+            </select>
+          </div>
+
+
+        <!-- <div class="card ">
+            <div class="card-body text-center">
+              <div class="card-text">
+                <h4>Total : Rs.5000</h4>
+                <button type="button" class="btn btn-outline-dark my-3">Add To Cart</button>
+                <p><small> 100% HAPPINESS GUARANTEE
+                    if you are not happy with your order contact us and we'll make it right! ..more</small></p>
+              </div>
+            </div>
+          </div>-->
+
+      </div><!--close about product card-->
+        </div><!--close col 4-->
+
+        <div class="col-md-3">
+         
+
+                <div class="card shadow-sm" style="border-radius: 25px;"  >
+                  <div class="card-title text-center ">
+              <h2 class="my-3">$125.35</h2>
+              
+                  </div><!--close card title-->
+                  <div class="card-body p-3 ">
+              <table class="table-sm w-100 mb-4">
+              <tbody>
+                <tr class="table-info">
+                <td><strong>Paper</strong></td>
+                <td>Matt finish</td>
+                </tr>
+              
+                <tr>
+                  <td><strong>size</strong></td>
+                  <td>6mm</td>
+                  </tr>
+              
+                  <tr class="table-info">
+                    <td> <strong>Quantity</strong></td>
+                    <td>2000</td>
+                    </tr>
+              
+                    <tr>
+                      <td> <strong>Treatments</strong></td>
+                      <td>Foiling</td>
+                      </tr>
+              
+              
+                      <tr class="table-info">
+                        <td> <strong>Addons</strong></td>
+                        <td>Null</td>
+                        </tr>
+              
+              
+              
+              </tbody>
+              </table>
+              <button type="button" class="btn btn-outline-info rounded-pill float-center w-100 my-2">Add To Cart</button> 
+              <button type="button" class="btn btn-outline-info rounded-pill float-center w-100">Buy Now</button> 
+              
+              <p class="small my-3">100% HAPPINESS GUARANTEE
+                  if you are not happy with your order contact us and we'll make it right! ..more</p>
+                  </div><!--close cardbody-->
+              
+                </div><!--close  card-->
+             
+        </div><!--close col-md-3-->
+      </div>
+      </div>
+     
+
+    
+
+<script>
+  /*images*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+/*tabs*/
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+
+</body>
+</html>
