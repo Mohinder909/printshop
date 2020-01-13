@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="card my-4" style=" border-left: 6px solid #33ccff ">
+      <div class="card-body ">
+        <h3 class=" ">Cart</h3>
+        <h6>Please log in to avail ₹50.00 cashback from this order.</h6>
+      </div>
+    </div>
+     
+       <div class="row">
+      
+          <div class="col-md-7">
+            <section  class="p-5" style="background-color: #eff5f5
+            ;">
+            <form action="">
+              <h3 class="mb-4 ">Billing Detail</h3>
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" class="form-control" placeholder="Email address" id="email">
+                  </div>
+                  <small>Your email address will help us support your shopping experience throughout the site.</small>
+                  <p>We save your email and cart so we can send you reminders - <a href="">don't email me.</a></p>
+
+                  <div class="form-group d-inline-block">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="fname" class="form-control" placeholder="First Names" id="fname">
+                  </div>
+
+                  <div class="form-group d-inline-block ml-5">
+                    <label for="lastname">LAST Name</label>
+                    <input type="lastname" class="form-control" placeholder="Email address" id="lastname">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company">COMPANY NAME (OPTIONAL)</label>
+                    <input type="company" class="form-control" placeholder="Company name" id="company">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="GST">GST NO. (OPTIONAL)</label>
+                    <input type="GST" class="form-control" placeholder="GST Number" id="GSTNumber">
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <label for="country">COUNTRY *</label>
+                    <input type="country" class="form-control" placeholder="GST Number" id="country">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="streetadd">STREET ADDRESS *</label>
+                    <input type="streetadd" class="form-control" placeholder="House No and Street Address" id="streetadd"><br>
+                    <input type="streetadd" class="form-control" placeholder="Apartment and unit etc Address" id="streetadd">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="towncity">TOWN / CITY *</label>
+                    <input type="towncity" class="form-control" placeholder="Town City" id="towncity">
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <label for="state">STATE / COUNTY *</label>
+                    <input type="state" class="form-control" placeholder="State/country" id="state">
+                  </div>
+
+                  <div class="form-group d-inline-block">
+                    <label for="postcode">POSTCODE / ZIP *</label>
+                    <input type="postcode" class="form-control" placeholder="Postcode.." id="postcode">
+                  </div>
+
+                  <div class="form-group d-inline-block ml-5">
+                    <label for="phone">PHONE </label>
+                    <input type="phone" class="form-control" placeholder="phone No" id="phone">
+                  </div>
+            </form><!--end form-->
+          </section><!--end section-->
+           </div><!--end col-md-7-->
+      
+           <div class="col-md-5 ">
+            <h3 class="text-center my-4">Your Order</h3>
+            <div class="card shadow-sm  float-right p-4 w-100" id="cart" style="border-radius: 25px;  border-top: 6px solid red;border-color:#33ccff
+            ;">
+                <div class="card-title">
+                    <h4 class="text-center" >Product Detail</h4>
+                </div>
+
+                <div class="body">
+                    <table class="table ">
+                      
+                        <tbody>
+                          <tr>
+                            <td><h6>Subtotal</h6></td>
+                            <td>2500</td>
+                         </tr>
+
+                         <tr>
+                            <td><h6>12% IGST</h6>
+                            </td>
+                            <td>
+                                ₹690.00</td>
+                         </tr>
+
+                         
+                         <tr>
+                            <td><h6>Total</h6></td>
+                            <td>₹69000.00</td>
+                         </tr>
+                         
+                      </tbody>
+                      </table>
+                </div><!--end card body-->
+            </div><!--end card-->
+
+            
+            <form action="" class="float-right my-4">
+
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customRadio1" name="example1" value="customEx1">
+                <label class="custom-control-label" for="customRadio1" data-toggle="tooltip" data-placement="bottom" title="Pay securely by Credit or Debit card, Wallets, U{PI, EMI or Internet Banking through Razorpay."> Credit/Debit Card/NetBanking/Wallets/UPI/EMI</label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customRadio2" name="example1" value="customEx2">
+                <label class="custom-control-label" for="customRadio2" data-toggle="tooltip" data-placement="bottom" title="Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.">  PayPal PayPal acceptance markWhat is PayPal?</label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customRadio3" name="example1" value="customEx3">
+                <label class="custom-control-label" for="customRadio3" data-toggle="tooltip" data-placement="bottom" title="Make your payment directly into our bank account Or Western Union. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.">  Direct Bank Transfer / Western Union</label>
+              </div>
+
+
+
+              <div class="card mt-4" style="border-color:#33ccff">
+                <div class="card-body">
+                   <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                  <label class="custom-control-label" for="customCheck"> I HAVE READ AND AGREE TO THE WEBSITE </label>
+                </div>
+                <a href="">TERMS AND CONDITION</a>
+              </div>
+              </div>
+              <button type="submit" class="btn btn-info mt-4"> Proceed To PayPal</button>
+              </form><!--end form-->
+
+            
+             
+        
+        
+           </div><!--end col-md-5-->
+       </div><!--end row-->
+   </div><!--end container-->
+
+   <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+    </body>
+    </html>
