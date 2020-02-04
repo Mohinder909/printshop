@@ -14,6 +14,23 @@
 
   <style>
 
+
+
+#bgimg{
+  background:url('http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122903/simplebg.jpg');
+
+width:100%;
+background-repeat:no-repeat;
+}
+
+@media only screen and (max-width: 600px)
+
+{
+  #bgimg{
+  background-size:600px 100%;
+  }
+}
+
     /*navbar*/
 /*==================================
 =            common css            =
@@ -629,6 +646,17 @@ a:focus {
 @media only screen and (max-width:990px){.box14{margin-bottom:30px}
 }
 
+/***paper card**/
+
+.paper-card{
+  transition: 0.3s;
+}
+
+.paper-card:hover{
+  box-shadow: 0 0  20px 0 rgba(0,0,0,0.5);
+  transform:translateY(-20px);
+}
+
 /*tabs*/
 .nav-tabs .nav-link.active {
     font-weight:bold;
@@ -668,6 +696,48 @@ a:focus {
     float: none;
     display: table;
     color: #4ad1e5;
+}
+
+
+
+.parallax{
+  width: 100%;
+  height: 550px;
+  background: url('images/computer.jpg') no-repeat;
+  background-size:100% 100vh;
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: overlay; 
+
+
+}
+
+.parallax-container{
+ 
+ 
+
+  padding: 10% 15% ;
+
+text-align: center;
+
+}
+.parallax-container p{
+  color:white;
+  text-align: center;
+font-size: 20px;
+
+
+  
+}
+
+.parallax-container h1{
+  color:aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family:monospace;
+  font-size: 60px;
+  
 }
 
 /*collapse*/
@@ -1463,28 +1533,28 @@ text-decoration: none;}
 <div class="container my-5 ">
   <div class="row my-5 ">
       <div class="col-lg-3">
-          <img src="images/handshake.png " class="ml-5"  alt="" height="100px" width="100px">
+          <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25120937/handshake.png" class="ml-5"  alt="" height="100px" width="100px">
           <p class="">
               A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
                
           </p>
       </div>
       <div class="col-lg-3">
-          <img src="images/debit-card.png" class="ml-5" alt=""  height="100px" width="100px">
+          <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25120925/debit-card.png" class="ml-5" alt=""  height="100px" width="100px">
           <p class="">
               A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
                
           </p>
       </div>
       <div class="col-lg-3">
-          <img src="images/teamwork.png" class="ml-5" alt=""  height="100px" width="100px" >
+          <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25120949/teamwork.png" class="ml-5" alt=""  height="100px" width="100px" >
           <p class="">
               A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
                
           </p>
       </div>
       <div class="col-lg-3">
-          <img src="images/think.png" class="ml-5" alt=""  height="100px" width="100px" >
+          <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25121003/think.png" class="ml-5" alt=""  height="100px" width="100px" >
           <p class="">
               A smooth and luxurious finish to meet all of your business card needs! Our Matte coating complements any
                
@@ -1493,13 +1563,17 @@ text-decoration: none;}
   </div>
 </div><!--end icons-->
 
-            <!--background change-->
-<div class="container-fluide p-3 " style=" background:url('http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122903/simplebg.jpg');height:500px;width:100%;">
-  <h1 class="display-4 text-center mt-5">Full creative control</h1>
-<div class="row m-5 ">
-  <div class="col-md-8 ">
-    <div class="row ">
-        <div class="col">
+
+
+  <!--background change-->
+<section class="py-5" id="bgimg" >
+
+<div class="container" >
+  <h1 class="display-4 text-center ">Full creative control</h1>
+<div class="row mt-3 ">
+
+ 
+        <div class="col-md-4">
         
             <p>Chhapai is an ideology, it’s much more than just ink and paper. It’s the symphony of ideas coming to life. We are a team that strives towards changing the way the world prints.
             </p>
@@ -1508,25 +1582,30 @@ text-decoration: none;}
 
           </p>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <h4>What We Do</h4>
           <p>The foundation of Chhapai was laid with the sole purpose of changing the perception of the world towards printing. We wanted to bring ideas to life, bridging the gap between imagination and reality.
  </p>
            
       </div>
-    </div>
-  </div>
+
+
 
  
   <div class="col-md-4">
-    <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122817/22.jpg" class=" h-100 w-100 shadow" style="border-radius: 50%;" alt="Cinque Terre">
+    <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122817/22.jpg" class="  shadow" style="border-radius: 50%; height: 250px;width:100%" alt="Cinque Terre">
   
- 
+   
   </div>
-  <button type="button" class="btn btn-outline-info btn-lg  mb-5" style="margin:auto">Know More Details</button>
+  <button type="button" class="btn btn-outline-info btn-lg  my-4 " style="margin:auto">Know More Details</button>
 </div>
 
+
+
+
 </div><!--end container-->
+
+</section><!--end section-->
             
 <div class="container-fluide mx-4  ">
   <h3 class="text-center text-info my-5">Choose By Paper</h3>
@@ -1535,7 +1614,7 @@ text-decoration: none;}
         <div class="col-md-3">
            
               
-                   <div class="card shadow">
+                   <div class="card paper-card">
                       <img class="card-img-top"  src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102106/premium-1.jpg" alt="Card image cap">
                       <div class="card-body">
                     <h5 class="card-title text-center border-bottom pb-3 ">Premium<a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
@@ -1548,7 +1627,7 @@ text-decoration: none;}
         <div class="col-md-3">
            
               
-            <div class="card shadow">
+            <div class="card paper-card">
                <img class="card-img-top " src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102008/enviro-1.jpg" alt="Card image cap" >
                <div class="card-body">
                   <h5 class="card-title text-center  border-bottom pb-3">Enviro  <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
@@ -1562,7 +1641,7 @@ text-decoration: none;}
        <div class="col-md-3">
            
               
-                   <div class="card shadow">
+                   <div class="card paper-card">
                       <img class="card-img-top"  src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25101916/bespoke.jpg" alt="Card image cap">
                       <div class="card-body">
                          <h5 class="card-title text-center border-bottom pb-3">Bespoke <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
@@ -1575,7 +1654,7 @@ text-decoration: none;}
         <div class="col-md-3">
            
               
-            <div class="card shadow">
+            <div class="card paper-card">
                <img class="card-img-top"  src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102120/unique-1.jpg" alt="Card image cap">
                <div class="card-body">
                   <h5 class="card-title text-center border-bottom pb-3">Unique <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
@@ -1699,19 +1778,18 @@ text-decoration: none;}
 
 
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122847/businesscard-1.jpg" height="500px" width="100%">
-                    </div>
-                    <div class="col-md-5">
-                        <h2 class="display-4 mt-5 text-info" >
-                          Our Design Services</h2>
-                            <p>Chhapai offers slick designing services for all clienteles associated with us for printing. We offer Simple Logo Tracing, Business Cards Designs and Logo Design Services. Our creativity,
-                               innovation and magnificence on printing and designing will put a spotlight on your brand. Learn More</p>
-                    </div>
+           <!--our design service-->
+
+            <section class="parallax">
+              <div class="parallax-container">
+                <h1 ><span class="text-danger">Our</span> Design Service</h1>
+                <p>Chhapai offers slick designing services for all clienteles associated with us for printing. We offer Simple Logo Tracing, Business Cards Designs and Logo Design Services. Our creativity,
+                  innovation and magnificence on printing and designing will put a spotlight on your brand. Learn More</p>
+             
+             <button type="button"  class="btn btn-outline-light my-2" href=""> More detail</button>
                 </div>
-            </div><!--end coustom printing-->
+            
+            </section>
 
 
          
@@ -1729,7 +1807,7 @@ text-decoration: none;}
                    Make sure to familiarize yourself with all the aspects of the business cards like the papers and the treatments.</p> 
         </div>
         <div class="col-md-7">
-            <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122832/Business_Cards.png" height="500px" width="700px" alt="">
+            <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25122832/Business_Cards.png" height="500px" width="100%" alt="">
         </div>
 
 
@@ -2015,7 +2093,7 @@ text-decoration: none;}
   designers, printers and everyday users to create an environment which promotes both innovation and excellence.</p>
    <div class="row">
      <div class="col-md-8">
-<img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25123430/franchise.jpg" height="400" width="750" alt="">
+<img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25123430/franchise.jpg" height="400" width="100%" alt="">
      </div>
 
      <div class="col-md-4">
@@ -2127,71 +2205,90 @@ text-decoration: none;}
  
 <hr class="my-5">
 
-
-
-
-<div class="container-fluide p-5 ">
-  <h1 class="text-center my-4">Some Good Things</h1>
-  <div class="row ">
-    <div class="col md-6">
-   <div class="row">
-     <div class="col">
-       <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102643/notebook-2.jpg"  style="border-radius:15px;"  height="250" width="300" alt="">
-     </div>
-     <div class="col">
-       <h5 class="mb-3">Notebooks</h5>
-       <p>Personalized “Living Hinge” Note Books are
-          cut From a Single Piece Of Wood In An Articulate Way Called A “Living Hinge” </p>
-          <button type="button" class="btn btn-outline-info">Buy Now</button>
-     </div>
-   </div>
-    </div>
-    <div class="col md-6">
-      <div class="row">
+<section class="bg-white">
+  <div class="container-fluide p-5">
+    <h1 class="text-center my-4">Some Good Things</h1>
+    <div class="row">
+      <div class="col-md-6">
+    <div class="card p-3" style="border:none">
+      <div class="row ">
         <div class="col">
-          <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102615/coaster1.jpg"  style="border-radius:15px;" height="250" width="300" alt="">
-        </div>
-        <div class="col">
-          <h5 class="mb-3">Coaster</h5>
-          <p>Light up your workspace with the customized coasters. These are lightweight and durable.
-           </p>
-             <button type="button" class="btn btn-outline-info">Buy Now</button>
+            <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102643/notebook-2.jpg" style="border-radius:15px;" height="250" width="300" alt="">
+          </div>
+          <div class="col ">
+            <div class="card-body ">
+              <h5 class="mb-3">Notebooks</h5>
+         <p>Personalized “Living Hinge” Note Books are
+            cut From a Single Piece Of Wood In An Articulate Way Called A “Living Hinge” </p>
+            <button type="button" class="btn btn-outline-info">Buy Now</button>
+            </div>
+          </div>
+  
         </div>
       </div>
     </div>
-  </div><!--frst row-->
-
-  <div class="row my-4">
-    <div class="col md-6">
-   <div class="row">
-     <div class="col">
-       <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102548/accessories-1.jpg" style="border-radius:15px;" height="250" width="300" alt="">
-     </div>
-     <div class="col">
-       <h5 class="mb-3">Accecories</h5>
-       <p>Your workspace defines you! Keep it well-organized and tidy with the Pen-Stand and Stationery Box
-          </p>
-          <button type="button" class="btn btn-outline-info">Buy Now</button>
-     </div>
-   </div>
-    </div>
-    <div class="col md-6">
-      <div class="row">
-        <div class="col">
-          <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102602/business-cardholder.jpg"  style="border-radius:15px;" height="250" width="300" alt="">
+    <div class="col-md-6">
+      <div class="card p-3" style="border: none;">
+        <div class="row ">
+          <div class="col">
+              <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102615/coaster1.jpg" style="border-radius:15px;" height="250" width="300" alt="">
+            </div>
+            <div class="col">
+              <div class="card-body ">
+                <h5 class="mb-3">Coaster</h5>
+                <p>Light up your workspace with the customized coasters. These are lightweight and durable.
+                 </p>
+                   <button type="button" class="btn btn-outline-info">Buy Now</button>
+              </div>
+            </div>
+    
+          </div>
         </div>
+      </div>
+    </div><!--first row end-->
+    <div class="row my-4">
+      <div class="col-md-6">
+    <div class="card p-3"style="border: none;" >
+      <div class="row ">
         <div class="col">
-          <h5 class="mb-3">Business Card Holder</h5>
-          <p>Business card Holders for your valuable business cards. These are classy and vibrant at the same time.
-           </p>
-             <button type="button" class="btn btn-outline-info">Buy Now</button>
+            <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102548/accessories-1.jpg" style="border-radius:15px;" height="250" width="300" alt="">
+          </div>
+          <div class="col ">
+            <div class="card-body ">
+              <h5 class="mb-3">Accecories</h5>
+              <p>Your workspace defines you! Keep it well-organized and tidy with the Pen-Stand and Stationery Box
+                 </p>
+                 <button type="button" class="btn btn-outline-info">Buy Now</button>
+            </div>
+          </div>
+  
         </div>
       </div>
     </div>
-  </div><!--second row-->
+    <div class="col-md-6">
+      <div class="card p-3" style="border: none;">
+        <div class="row ">
+          <div class="col">
+              <img src="http://s3-ap-south-1.amazonaws.com/rna-chhapai-wp/srcchhp/uploads/2020/01/25102602/business-cardholder.jpg" style="border-radius:15px;" height="250" width="300" alt="">
+            </div>
+            <div class="col ">
+              <div class="card-body ">
+                <h5 class="mb-3">Business Card Holder</h5>
+                <p>Business card Holders for your valuable business cards. These are classy and vibrant at the same time.
+                 </p>
+                   <button type="button" class="btn btn-outline-info">Buy Now</button>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
 
 
-</div><!--end container-->
+
 
 
 <div class="container my-5">
